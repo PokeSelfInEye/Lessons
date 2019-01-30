@@ -5,8 +5,5 @@ pinMode(6, OUTPUT);
 
 void loop() {
   // put your main code here, to run repeatedly:
-digitalWrite(6, HIGH);
-delayMicroseconds((1000)+(analogRead(5)));
-digitalWrite(6, LOW);
-delay(20); 
+analogWrite(6, analogRead(5)/4);
 }
